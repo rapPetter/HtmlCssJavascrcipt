@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="app.js" type="module"></script>
+    <title>DevinHouse</title>
+</head>
+<body>
+    <div id="painel">
+        <div class="conteinerelementos">
+            <header class="titulo">
+                <img src="img/book.png" alt="imagem do titulo da pagina">
+                <div>
+                    <div>
+                        <h3>DEVin</h3>
+                    <h1>Knowledge</h1>
+                    </div>
+                    <h4 class="subTitulo">Learn, Code and Save</h4>
+                </div>
+            </header>
+            <form id="formulario-cadastro">
+                <div class="formulario">
+                    <input id="titulo" type="text" size="30" minlength="8" maxlength="64" placeholder="Digite um título"  required>
+                    <label id="labelTitulo" for="titulo">Titulo</label>
+                </div>   
+
+                <div class="formulario">
+                    <input id="linguagem" type="text" size="30" minlength="4"  maxlength="16" placeholder="Digite uma linguagem ou skill" required >
+                    <label id="labelLinguagem" for="linguagem">Linguagem/Skill</label>
+                </div>  
+            
+                <div class="formulario">
+                    <select id="categoria" name="categoria" required >
+                        <option value="">Selecione uma categoria</option>
+                        <option value="FrontEnd">FrontEnd</option>
+                        <option value="BackEnd">BackEnd</option>
+                        <option value="FullStack">FullStack </option>
+                        <option value="Comportamental/Soft">Comportamental/Soft</option>
+                    </select>
+                    <label id="labelCategoria" for="categoria">Categoria</label>
+                </div>
+
+                <div class="formulario">
+                    <textarea id="descricao" rows="5" cols="50"  minlength="32" maxlength="512" placeholder="Escreva aqui o detalhamento do item que esta sendo cadastrado..." required></textarea>
+                    <label id="labelDescricao" for="descricao">Descrição</label>
+                </div>  
+
+                <div class="formulario">
+                    <input id="linkVideo" type="text" size="30" minlength="18" maxlength="130"  placeholder="https://www.youtube.com/watch?" >
+                    <label id="labelVideo" for="linkVideo"> Link do vídeo do YouTube</label>
+                </div>  
+
+                <div class="conteinerbotao">
+                    <button type="reset" id="btnLimpar">Limpar</button>
+                    <button type="submit" id="btnSave">Salvar</button>
+                </div>
+            </form>
+        </div>    
+        <div class="conteinerjava">
+            <div class="informacaoTitulo">
+                <div id="clickTotal">
+                    <Span>TOTAL</Span>
+                    <span id="demoTotal"></span>
+                </div>
+                <div id="clickFront">
+                    <Span>FrontEnd</Span>
+                    <span id="demoFront"></span>
+                </div>
+                <div id="clickBack">
+                    <Span>BackEnd</Span>
+                    <span id="demoBack"></span>
+                </div>
+                <div id="clickFull">
+                    <Span>FullStack</Span>
+                    <span id="demoFull"></span>
+                </div>
+                <div id="clickSoft">
+                    <Span>SoftSkill</Span>
+                    <span id="demoSoft"></span>
+                </div>
+            </div>
+            <div class="Busca">
+                <input id="Pesquisar" type="text" size="30" placeholder="Digite o titulo que deseja buscar">
+                <button id="btnPesquisa"> <img src="img/procurar.png" alt="imagem de pesquisar !"> </button>
+                <button id="btnLimparCampos"><img src="img/limpar.png" alt="imagem de limpar a pesquisa!"></button>
+            </div>
+            <div class="separador">
+                <span id="mostrarCategoira"></span>
+                <hr>
+            </div>
+                <div id="cadastro">
+                    
+                    <div>
+                    <ul id="cadastroInterno">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

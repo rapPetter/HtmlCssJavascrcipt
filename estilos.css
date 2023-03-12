@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+#painel{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.conteinerjava{
+    display: flex;
+    flex-direction: column;
+    max-height: 900px;
+    max-width: 955px;
+    margin-left: 10px;
+    border: 1px solid rgb(5, 5, 5);
+    box-shadow: 3px 3px 1px 0px;
+    border-radius: 10px;
+    background: #F6F7F9;
+}
+.conteinerelementos{
+    display: flex;
+    min-height: 500px;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid rgb(5, 5, 5);
+    background-color:#292466;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px;
+    /* colocar sombra */
+}
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+.titulo div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo div div{
+    display: flex;
+    flex-direction: row;
+}
+.titulo div div h1{
+    margin-bottom: 30px;
+}
+.titulo div .subTitulo{
+    margin-top: 0px;
+}
+.formulario input , textarea, select{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block; /* para ficar fixo na linha */
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+    padding-top: 18px;
+}
+
+textarea{
+    height: 64px;
+    resize: none;
+}
+.formulario{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.formulario input:focus , textarea:focus, select:focus{
+    border-bottom: 2px solid rgb(189, 211, 189);
+}
+.formulario label{
+    color:white;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.formulario input:focus +label , textarea:focus +label, select:focus +label ,
+.formulario input:valid +label , textarea:valid +label, select:valid +label{
+    font-size: 13px;
+    margin-top: 0;
+    color: white;
+}
+.conteinerbotao{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.conteinerbotao button{
+    flex-grow: 1;
+    background-color: transparent;
+    border-color: black;
+    color: black;
+    padding: 7px;
+    font-weight: 12pt;
+    margin: 20px 0px 0px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.conteinerbotao button:hover, .Busca button:hover{
+    background-color: rgb(199, 191, 191);
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+}
+
+.informacaoTitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}
+.informacaoTitulo div{
+    background: #b1acac83;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    margin: 25px 0px 25px 0px;
+    cursor: pointer;
+    color: black;
+    box-shadow: 5px 5px 1px 1px;
+}
+
+.informacaoTitulo div:hover{
+    background-color:  #d4cfcf83;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 5px;
+}
+
+.Busca{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 15px 10px 0px;
+}
+.separador{
+    margin-top: 15px;
+    text-align: center;
+}
+
+#cadastro{
+    overflow-y: scroll;
+}
+#cadastroInterno{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+#cadastroInterno li{
+    background-color:  #fdfdfd;
+    list-style-type: none;
+    margin: 10px 10px 10px 10px;
+    padding: 0px 10px 10px 10px;
+    border: 1px solid black;
+    /* o box shadow é para fazer a sombra em redor dos cartoes */
+    box-shadow: 10px 5px 5px black;
+    /* esse codigo a baixo fez o texto quebrader de linha */
+    word-wrap: break-word;
+    border-radius: 10px;
+    min-width: 830px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#cadastroInterno li h2{
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 15px;
+}
+
+#cadastroInterno li div{
+    display: flex;
+    justify-content: flex-end;
+
+}
+#cadastroInterno li div img{
+    max-width: 48px;
+    max-height: 48px;
+    margin-left: 15px;
+}
+.imagemjs{
+    /* para quando mouse ir em cima da imagem aparecer outra imagem do curso do mouse */
+    cursor: pointer;
+
+    color: black;
+    box-shadow: 3px 3px 1px 0px;
+    border-radius: 15px;
+}
+.Busca button{
+    cursor: pointer;
+}
+
+.Busca button img:hover, .imagemjs:hover{
+    background-color: rgb(199, 191, 191);
+    color: rgb(228, 216, 216);
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 30px;
+}
+.Busca input{
+    width: 70%;
+    margin-left: 15px;
+    padding-left: 15px;
+    display: inline-block; /* para ficar fixo na linha */
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    min-width: 180px;
+    font-size: 16px;
+    border-radius: 10px;
+}
